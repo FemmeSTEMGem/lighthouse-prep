@@ -8,3 +8,4 @@ def goodbye
 end
 
 50.times { say_hello }
+goodbye
