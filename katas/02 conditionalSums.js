@@ -1,3 +1,14 @@
+// For this kata, we'll be adding only the numbers in the array which match the given condition.
+
+
+// Instruction
+  // Create a function named conditionalSum that will be given an array of numbers and a condition, in this case odd or even. Given this condition, add up only the values which match that condition. If no values match the condition, return 0.
+
+
+// Warning
+  // Use some sort of looping. Do Not use Array.prototype.filter()
+
+
 const conditionalSum = function(values, condition) {
   let addedUpArray = []
   if (condition === "even") {
@@ -23,27 +34,6 @@ const conditionalSum = function(values, condition) {
   return pile;
 };
 
-
-/*
-function conditionalSumDanny(valueArray, condition) {
-  let finalSum = 0;
-  for (let index = 0; index < valueArray.length; index++) {
-    let currentNumber = valueArray[index];
-    
-    if (condition == "even") {
-      if (currentNumber % 2 == 0) {
-        finalSum += currentNumber;
-      }
-    } else {
-      if (currentNumber % 2 != 0) {
-        finalSum += currentNumber;
-      }
-    }
-
-    return finalSum
-  }
-}
-*/
 console.log(conditionalSum([1, 2, 3, 4, 5], "even") == 6);
 console.log(conditionalSum([1, 2, 3, 4, 5], "odd") == 9);
 console.log(conditionalSum([13, 88, 12, 44, 99], "even") == 144);

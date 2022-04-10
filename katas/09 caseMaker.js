@@ -1,3 +1,8 @@
+// We will receive a normal string of words separated with spaces as the input. Our job is to convert these strings into camel cased strings.
+
+// Create a function named camelCase that will convert a string to camel case, and return the result.
+
+
 const camelCase = function(input) {
   let splitArray = input.split(' ');
   for (let i = 1; i < splitArray.length; i++) {
